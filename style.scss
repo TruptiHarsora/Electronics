@@ -1,0 +1,65 @@
+.link_decoration{
+    text-decoration: none;
+    color:rgb(59, 58, 58);
+    margin-right: 1rem !important;
+    margin-left: 1rem !important;
+}
+
+ .carousel_heading{
+    top:10%; 
+    left:10%; 
+    width: 45%;
+
+    .carousel-h1 {
+        font-size:6rem; 
+        text-shadow:3px 3px 5px rgb(58, 58, 58);
+        /* letter-spacing: 3px; */
+        font-weight: 700;
+    }
+    .carousel_btn{
+        margin: 3rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+        box-shadow: 3px 3px 8px #2d2c2c;;
+    }
+ }
+ .tranding_cate_img{
+    width: 30%; 
+    background-color: rgb(43, 45, 50); 
+    box-shadow: 0px 0px 10px rgb(86, 138, 196);
+    padding:1.5rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    img{
+        height: 100%; 
+        width: 100%;
+    }
+   
+ }
+ .tranding_cate_img:hover{
+     transform: scale(1.1);
+ }
+
+.slider_manu{
+    width: 12rem; 
+    padding: 2rem;
+
+    .slider_manu_prod{
+    width: 150px; 
+    height: 150px;
+    box-shadow: 0px 0px 10px rgb(86, 138, 196);
+    background-color: rgb(27, 28, 31);
+    margin-left: auto;
+    margin-left: auto;
+    border-radius: 50%;
+        img{
+            padding:1.3rem;
+        }
+        h6{
+            text-align: center;
+            color:white;
+            padding: 1rem 0;
+        }
+    }
+}
+ 
