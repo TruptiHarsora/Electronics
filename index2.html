@@ -201,7 +201,7 @@
 
     <main>
         <!-- Top Carousel Img -->
-       <div class="container-fluid" style="background-image: url(./images/prod_back10.jpg); background-size: cover; ">
+       <div class="container-fluid " style="background-image: url(./images/prod_back10.jpg); background-size: cover; ">
             <div id="carouselIndicators" class="carousel slide carousel-dark">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -211,21 +211,21 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="./images/prod_cam3.png" style="width:50%; margin-left:50%;" alt="...">
-                        <div class="carousel-caption d-none d-md-block carousel_heading">
+                        <div class="carousel-caption d-md-block carousel_heading">
                             <h1 class="carousel-h1">Professional Photography</h1>
                             <button class="btn btn-warning carousel_btn"> Shop Now</button>
                         </div>
                     </div>
                     <div class="carousel-item">
                     <img src="./images/prod_music.png" style="width:52.56%; margin-left:50%;" alt="...">
-                    <div class="carousel-caption d-none d-md-block carousel_heading" >
+                    <div class="carousel-caption  d-md-block carousel_heading" >
                             <h1 class="carousel-h1">Music Loud and Clear</h1>
                             <button class="btn btn-warning carousel_btn"> Shop Now</button>
                         </div>
                     </div>
                     <div class="carousel-item">
                     <img src="./images/prod_watch2.png" style="width:50%; margin-left:50%;" alt="...">
-                    <div class="carousel-caption d-none d-md-block carousel_heading" >
+                    <div class="carousel-caption  d-md-block carousel_heading" >
                             <h1 class="carousel-h1">Time with Perfection</h1>
                             <button class="btn btn-warning carousel_btn"> Shop Now</button>
                         </div>
@@ -244,9 +244,9 @@
        <br>
 
        <!-- Trending Category -->
-       <div class="container-fluid w-75">
+       <div class="container">
             <h1 class="py-5 text-light">Tranding Category</h1>
-            <div class="d-flex gap-5 justify-content-center">
+            <div class="d-flex gap-4 gap-lg-5 gap-md-4" id="trending_div">
                 <div class="tranding_cate_img">
                     <a href="#">
                         <img src="./images/Ad_phone1.png" alt="">
@@ -271,13 +271,13 @@
       
        <!-- Carousel Manu -->
         <div class="container-fluid  d-flex justify-content-center p-5 " style="background-color: rgb(27, 28, 31);">
-            <div class="owl-carousel d-flex gap-5 w-75 p-3 bg-transparent overflow-hidden">
+            <div id="Carousel_slider_div" class="owl-carousel d-flex gap-5 w-75 p-4  bg-transparent overflow-hidden">
      
                 <div class=" post item slider_manu">
                     <a class="text-decoration-none" href="#">
                         <div class="slider_manu_prod">
                             <img src="./images/icon/icons8-watch-100-2.png" alt="" >
-                            <h6 >Computer</h6>
+                            <h6 >Watch</h6>
                         </div>
                     </a>                    
                 </div>
@@ -309,7 +309,15 @@
                    <a class="text-decoration-none" href="#">
                        <div class="slider_manu_prod">
                            <img src="./images/icon/icons8-tv-100.png" alt="" >
-                           <h6 >Computer</h6>
+                           <h6 >TV</h6>
+                       </div>
+                   </a>                    
+                </div>
+                 <div class="post item slider_manu" style="margin-bottom: 20px;">
+                   <a class="text-decoration-none" href="#">
+                       <div class="slider_manu_prod" >
+                           <img src="./images/icon/icons8-computer-50.png" alt="" >
+                           <h6>Computer</h6>
                        </div>
                    </a>                    
                 </div>
@@ -317,10 +325,73 @@
         </div>
     <br>
         <!-- Best Sellers -->
-         <div class="container container-fluid-lg justify-content-center p-5 ">           
+        <div class="container p-5 ">           
             <h1 class="py-5 text-light d-block">Best Sellers</h1>
-            <div class="d-flex gap-4">
-                 <div class="card card_div">
+            <div id="best_seller_div" class="d-flex flex-wrap gap-4">
+                <div class="card card_div">
+                    <img src="./images/prod_game.png" class="card-img-top p-3" alt="...">
+                    <div class="card-body border-top border-primary border-3" style="margin: -1rem 1rem;">
+                        <h5 class="card-title">Ultra Max 2.01 Big Display</h5>
+                        <p class="card-text">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa-regular fa-star"></span>
+                            <span class="fa-regular fa-star"></span>
+                        </p>
+                        <h4 class="text-danger"><span class="fa-solid fa-indian-rupee-sign d-inline"></span> 1300</h4>
+                        <a href="#" class="btn btn-primary my-3">+ Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class="card card_div">
+                    <img src="./images/prod_cam2.png" class="card-img-top p-3" alt="...">
+                    <div class="card-body border-top border-primary border-3" style="margin: -1rem 1rem;">
+                        <h5 class="card-title">Ultra Max 2.01 Big Display</h5>
+                        <p class="card-text">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa-regular fa-star"></span>
+                        </p>
+                        <h4 class="text-danger"><span class="fa-solid fa-indian-rupee-sign d-inline"></span> 3000</h4>
+                        <a href="#" class="btn btn-primary my-3">+ Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class="card card_div">
+                    <img src="./images/prod_watch1.png" class="card-img-top p-3" alt="...">
+                    <div class="card-body border-top border-primary border-3" style="margin: -1rem 1rem;">
+                        <h5 class="card-title">Boult K4 big Display Smart Watch</h5>
+                        <p class="card-text">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa-regular fa-star"></span>
+                            <span class="fa-regular fa-star"></span>
+                            <span class="fa-regular fa-star"></span>
+                        </p>
+                        <h4 class="text-danger"><span class="fa-solid fa-indian-rupee-sign d-inline"></span> 1800</h4>
+                        <a href="#" class="btn btn-primary my-3">+ Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class="card card_div">
+                    <img src="./images/prod_music3.png" class="card-img-top p-3" alt="...">
+                    <div class="card-body border-top border-primary border-3" style="margin: -1rem 1rem;">
+                        <h5 class="card-title">Noise Audio K30 Wireless earbuds</h5>
+                        <p class="card-text">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </p>
+                        <h4 class="text-danger"><span class="fa-solid fa-indian-rupee-sign d-inline"></span> 900</h4>
+                        <a href="#" class="btn btn-primary my-3">+ Add to Cart</a>
+                    </div>
+                </div>
+                <div class="card card_div ">
                     <img src="./images/prod_game.png" class="card-img-top p-3" alt="...">
                     <div class="card-body border-top border-primary border-3" style="margin: -1rem 1rem;">
                         <h5 class="card-title">Ultra Max 2.01 Big Display</h5>
@@ -384,110 +455,101 @@
                     </div>
                 </div>
             </div>
-           <br>
-            <div class="d-flex gap-4">
-                <div class="card card_div">
-                    <img src="./images/prod_music3.png" class="card-img-top p-3" alt="...">
-                    <div class="card-body border-top border-primary border-3" style="margin: -1rem 1rem;">
-                        <h5 class="card-title">Ptron Bassbuds Earbuds Wireless </h5>
-                        <p class="card-text">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa-regular fa-star"></span>
-                            <span class="fa-regular fa-star"></span>
-                            <span class="fa-regular fa-star"></span>
-                        </p>
-                        <h4 class="text-danger"><span class="fa-solid fa-indian-rupee-sign d-inline"></span> 2000</h4>
-                        <a href="#" class="btn btn-primary my-3">+ Add to Cart</a>
-                    </div>
-                </div>
-
-                 <div class="card card_div">
-                    <img src="./images/prod_watch1.png" class="card-img-top p-3" alt="...">
-                    <div class="card-body border-top border-primary border-3" style="margin: -1rem 1rem;">
-                        <h5 class="card-title">ORBIT 3.35s Super Bright display </h5>
-                        <p class="card-text">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                        </p>
-                        <h4 class="text-danger"><span class="fa-solid fa-indian-rupee-sign d-inline"></span> 2300</h4>
-                        <a href="#" class="btn btn-primary my-3">+ Add to Cart</a>
-                    </div>
-                </div>
-
-                 <div class="card card_div">
-                    <img src="./images/prod_game.png" class="card-img-top p-3" alt="...">
-                    <div class="card-body border-top border-primary border-3" style="margin: -1rem 1rem;">
-                        <h5 class="card-title">Ultra Max 2.01 Big Display</h5>
-                        <p class="card-text">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa-regular fa-star"></span>
-                        </p>
-                        <h4 class="text-danger"><span class="fa-solid fa-indian-rupee-sign d-inline"></span> 1800</h4>
-                        <a href="#" class="btn btn-primary my-3">+ Add to Cart</a>
-                    </div>
-                </div>
-
-                <div class="card card_div">
-                    <img src="./images/prod_cam2.png" class="card-img-top p-3" alt="...">
-                    <div class="card-body border-top border-primary border-3" style="margin: -1rem 1rem;">
-                        <h5 class="card-title">SONY Ultra Max 2.01 Camera</h5>
-                        <p class="card-text">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa-regular fa-star"></span>
-                            <span class="fa-regular fa-star"></span>
-                        </p>
-                        <h4 class="text-danger"><span class="fa-solid fa-indian-rupee-sign d-inline"></span> 5000</h4>
-                        <a href="#" class="btn btn-primary my-3">+ Add to Cart</a>
-                    </div>
-                </div>
-            </div>      
-         </div>
+            
+        </div>
 
          <!-- Big Discount  -->
-          <div class="container-fluid big_discount_div">
+        <div class="container-fluid big_discount_div">
+            <div class="d-block" style="height: 100%;">
                 <br>
                 <p>BIG DISCCOUNT</p>
                 <h1 class="">Apple iphone 16 pro max</h1>
                 <h4 class="text-danger">20% off</h4>
                 <a href="#" class="btn btn-warning fw-bolder">+ Add to Cart</a>
-            <div>
+            </div>
+        <div>
+        
 
+            
+        <!-- Limited time offer -->
+        
+        <!-- <div class="conatiner-fluid">
+            <div class="row border">
+                <div class="col-4 d-flex flex-column">
+                   <div class="row">
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Special title treatment</h5>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Special title treatment</h5>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div> -->
             
     </main>
+    <!-- <div class="main-section-one">
+      <div class="conatiner-fluid">
+            <div class="row border">
+                <div class="col-4 d-flex flex-column">
+                   <div class="row">
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Special title treatment</h5>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Special title treatment</h5>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-    
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <br>
 
     <footer>
-        <div class="container-fluid  d-flex flex-column justify-content-center  border border-primary;">
-            <!-- <hr style="height:2px;border-width:0;background-color:white; opacity:1;"> -->
-             <div style="max-width: 450px;width: 100%; margin-left: 10rem;">
-                 <div class=" row g-3">
-                    <div class="col-auto">
-                       <input id="NewsletterFormr" type="email" class="field__input form-control"placeholder="Your Mail Address..." >
-                    </div>
-                    <div class="col-auto">
-                        <button type="submit" class="btn btn-primary" name="commit" id="Subscribe" aria-label="Subscribe">
-                           <span>Subscribe</span>
-                        </button>
-                    </div>
-                      
-                        
-                      </div>
-             </div>
-            
-                
+        <!-- Footer -->
+        <div class="container-fluid d-flex flex-wrap" style="box-shadow: 0px 0px 10px rgb(86, 138, 196);">     
              <br>
-            <div class="row " style="color:white;max-width: 50%;margin-left: 10rem;">
-                <div class="col border">
+            <div class="row p-5" style="color:white;max-width: 100%;">
+                <div class="col-2">
+                    <a href="#" class="navbar-brand p-0">
+                        <h2 class="text-primary m-0"><i class="fas fa-shopping-bag text-secondary me-2"></i>Electronics</h2>
+                    </a>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim architecto minus 
+                        sed praesentium saepe. Maxime beatae architecto nobis provident dolorum?
+                    </p>
+                </div>
+                <div class="col-2 ">
                     <h5> COMPANY</h5>
                     <ul class="list-unstyled mx-3">
                         <li>Search</li>
@@ -496,7 +558,7 @@
                         <li>My cart</li>
                     </ul>                        
                 </div>
-                <div class="col border">
+                <div class="col-2 ">
                     <h5> INFORMATION</h5>
                     <ul class="list-unstyled mx-3">
                         <li>airpods</li>
@@ -507,7 +569,7 @@
 
                     </ul>
                 </div>
-                <div class="col border">
+                <div class="col-2 ">
                     <h5> SHOP</h5>
                     <ul class="list-unstyled mx-3">
                         <li>Apple iPhone 15 pro max</li>
@@ -517,7 +579,7 @@
                         <li>OnePlus 11</li>
                     </ul>
                 </div>
-                <div class="col border">
+                <div class="col-2 ">
                     <h5> USEFULL LINK</h5>
                     <ul class="list-unstyled mx-3">
                         <li>About us</li>
@@ -527,6 +589,20 @@
                         <li>Shipping & Return</li>
                         <li>Terms & Condition</li>
                     </ul>
+                </div>
+                <div class="col-2 ">
+                    <h5> Subscribe Us</h5>
+                    <p>Subscribe to our newsletter to get updates about our grand offers.</p>
+                    <div style="max-width: 450px;width: 100%;">
+                        <div class="row">
+                            <div class="col gap-1 d-flex flex-row w-100">
+                                <input id="NewsletterForm" type="email" class="field__input form-control"placeholder="Your Mail Address..." >
+                                <button type="submit" class="btn btn-primary" name="commit" id="Subscribe" aria-label="Subscribe">
+                                    <span>Subscribe</span>
+                                </button>
+                            </div>                       
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -553,8 +629,11 @@
          0:{
             items:2
         },
-        800:{
+        300:{
             items:2
+        },
+        500:{
+            items:3
         },
         900:{
             items:3
@@ -563,8 +642,11 @@
             items:4
         },
         1200:{
-            items:6
+            items:5
         },
+        1400:{
+            items:6
+        }
         
     },
   });
