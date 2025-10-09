@@ -1,3 +1,9 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .link_decoration {
   text-decoration: none;
   color: rgb(59, 58, 58);
@@ -69,6 +75,7 @@
 
 .card_div {
   width: 18rem;
+  /* width: 20.33rem; */
   color: white;
   background-color: rgb(43, 45, 50);
   box-shadow: 0px 0px 10px rgb(86, 138, 196);
@@ -125,12 +132,20 @@
   }
 }
 @media (max-width: 960px) {
-  .carousel_heading .carousel-h1 {
-    font-size: 3rem;
+  #top_carousel_container #top_carousel_inner img {
+    width: 70% !important;
+    margin-left: 35% !important;
+    margin-top: 30% !important;
   }
-  .carousel_heading .carousel_btn {
-    margin: 1.5rem;
-    font-size: 1rem;
+  #top_carousel_container #top_carousel_inner .carousel_heading {
+    top: 5% !important;
+  }
+  #top_carousel_container #top_carousel_inner .carousel_heading .carousel-h1 {
+    font-size: 4rem;
+  }
+  #top_carousel_container #top_carousel_inner .carousel_heading .carousel_btn {
+    margin-top: 5rem;
+    font-size: 2rem;
   }
   .tranding_cate_img {
     width: 100%;
@@ -160,14 +175,26 @@
   h1 {
     text-align: center;
   }
+  #best_seller_div {
+    font-size: x-small;
+  }
 }
 @media (max-width: 720px) {
-  .carousel_heading .carousel-h1 {
-    font-size: 2.5rem;
+  #top_carousel_container #top_carousel_inner img {
+    width: 70% !important;
+    margin-left: 35% !important;
+    margin-top: 40% !important;
   }
-  .carousel_heading .carousel_btn {
-    margin: 1rem;
-    font-size: 0.7rem;
+  #top_carousel_container #top_carousel_inner .carousel_heading {
+    width: 80% !important;
+    top: 5% !important;
+  }
+  #top_carousel_container #top_carousel_inner .carousel_heading .carousel-h1 {
+    font-size: 3.5rem;
+  }
+  #top_carousel_container #top_carousel_inner .carousel_heading .carousel_btn {
+    margin-top: 5rem;
+    font-size: 1.1rem;
   }
   #trending_div {
     flex-direction: column;
@@ -200,10 +227,24 @@
   }
 }
 @media (max-width: 540px) {
-  .carousel_heading .carousel-h1 {
-    font-size: 1.3rem;
+  #navbar_conatiner option {
+    font-size: 0.8rem;
   }
-  .carousel_heading .carousel_btn {
+  #navbar_offcanvace ul {
+    font-size: xx-small;
+  }
+  #top_carousel_container #top_carousel_inner img {
+    width: 80% !important;
+    margin-left: 35% !important;
+    margin-top: 40% !important;
+  }
+  #top_carousel_container #top_carousel_inner .carousel_heading {
+    top: 5% !important;
+  }
+  #top_carousel_container #top_carousel_inner .carousel_heading .carousel-h1 {
+    font-size: 3rem;
+  }
+  #top_carousel_container #top_carousel_inner .carousel_heading .carousel_btn {
     margin: 0.6rem;
     font-size: 0.8rem;
   }
@@ -215,10 +256,33 @@
     width: 80px;
     height: 80px;
   }
+  #best_seller_container {
+    padding: 0.1rem !important;
+  }
+  /* #best_seller_div{ 
+    font-size: xx-small;
+    h5,a{
+      font-size: small;
+    }
+    h4{
+      font-size: large;
+    }
+    a{
+      line-height: 1;
+      padding: 0.2;
+      width: 100px;
+    }
+
+  }  */
   #footer_div {
+    row-gap: 1rem;
     font-size: 0.8rem;
   }
   #footer_div h2 {
     font-size: 1rem;
   }
-}/*# sourceMappingURL=style.css.map */
+  #subscribe_form {
+    flex-direction: column !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */

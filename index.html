@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"> -->
     <title>E-commerce</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -13,7 +14,7 @@
   <body style="background-color: rgb(33, 34, 38)">
     
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav id="navbar_conatiner" class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a href="" class="navbar-brand p-0">
                 <h2 class="text-primary m-0"><i class="fas fa-shopping-bag text-secondary me-2"></i>Electronics</h2>
@@ -28,7 +29,7 @@
                 <div class="mx-auto bg-body-secondary border search-bar row bg-light p-2 my-2 rounded-4">
                     <form class="d-flex">
                         <select class="form-select border-0 w-50 bg-transparent">
-                                    <option>All Categories</option>
+                                    <option hidden>All Categories</option>
                                     <option>Television</option>
                                     <option>Phone</option>
                                     <option>Home Appliance</option>
@@ -62,7 +63,7 @@
 
 
         <div class="container-fluid " style=" background-color: rgb(33, 34, 38);font-weight: 700; color:rgb(255, 255, 255)">
-            <div class="d-flex justify-content-between align-items-center px-3 flex-wrap">
+            <div id="navbar_offcanvace" class="d-flex justify-content-between align-items-center px-3 flex-wrap">
                 <ul class="navbar-nav mb-2 mb-lg-0 d-flex flex-row gap-4 ps-3">
                     <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="offcanvas" data-bs-target="#canvas_left1"> <i class="fa-solid fa-bars pe-3"></i>All</a>
@@ -201,14 +202,14 @@
 
     <main>
         <!-- Top Carousel Img -->
-       <div class="container-fluid " style="background-image: url(./images/prod_back10.jpg); background-size: cover; ">
+       <div class="container-fluid " id="top_carousel_container" style="background-image: url(./images/prod_back10.jpg); background-size: cover;">
             <div id="carouselIndicators" class="carousel slide carousel-dark">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
-                <div class="carousel-inner">
+                <div class="carousel-inner" id="top_carousel_inner">
                     <div class="carousel-item active">
                         <img src="./images/prod_cam3.png" style="width:50%; margin-left:50%;" alt="...">
                         <div class="carousel-caption d-md-block carousel_heading">
@@ -325,9 +326,9 @@
         </div>
     <br>
         <!-- Best Sellers -->
-        <div class="container-fluid w-75 p-5 ">           
+        <div class="container-fluid w-75 p-5" id="best_seller_container">           
             <h1 class="py-5 text-light d-block">Best Sellers</h1>
-            <div id="best_seller_div" class="d-flex flex-wrap gap-4">
+            <div id="best_seller_div" class="d-flex flex-wrap gap-4 ">
                 <div class="card card_div">
                     <img src="./images/prod_game.png" class="card-img-top p-3" alt="...">
                     <div class="card-body border-top border-primary border-3" style="margin: -1rem 1rem;">
@@ -539,7 +540,7 @@
         <!-- Footer -->
         <div class="container-fluid d-flex flex-wrap " style=" box-shadow: 0px 0px 20px rgb(86, 138, 196);">     
              <br>
-            <div id="footer_div" class="row p-5" style="color:white;max-width: 100%;">
+            <div id="footer_div" class="row p-5" style="color:white;">
                 <div class="col-6 col-xxl-2 col-xl-4  col-md-4">
                     <a href="#" class="navbar-brand p-0">
                         <h2 class="text-primary m-0"><i class="fas fa-shopping-bag text-secondary me-2"></i>Electronics</h2>
@@ -595,7 +596,7 @@
                     <p>Subscribe to our newsletter to get updates about our grand offers.</p>
                     <div style="max-width: 450px;width: 100%;">
                         <div class="row">
-                            <div class="col gap-1 d-flex flex-row w-100">
+                            <div id="subscribe_form" class="col gap-1 d-flex flex-row w-100">
                                 <input id="NewsletterForm" type="email" class="field__input form-control"placeholder="Your Mail Address..." >
                                 <button type="submit" class="btn btn-primary" name="commit" id="Subscribe" aria-label="Subscribe">
                                     <span>Subscribe</span>
