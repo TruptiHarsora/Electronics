@@ -284,5 +284,8 @@
   #subscribe_form {
     flex-direction: column !important;
   }
+  #subscribe_form input {
+    font-size: small;
+  }
 }
 /*# sourceMappingURL=style.css.map */

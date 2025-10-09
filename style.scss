@@ -335,6 +335,9 @@
   }
   #subscribe_form{
     flex-direction: column !important;
+    input{
+      font-size: small;
+    }
   }
 }
 
